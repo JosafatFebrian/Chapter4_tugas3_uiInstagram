@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/Instagram"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/instagram_logo"
+        app:layout_constraintEnd_toEndOf="@+id/option_picture"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_h_1" />
+
+    <ImageView
+        android:id="@+id/PP_picture"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/profile_pp"
+        app:layout_constraintStart_toStartOf="@+id/feed"
+        app:layout_constraintTop_toBottomOf="@+id/Instagram" />
+
+    <TextView
+        android:id="@+id/text_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Josafat Febrian"
+        app:layout_constraintStart_toEndOf="@+id/PP_picture"
+        app:layout_constraintTop_toTopOf="@+id/PP_picture" />
+
+    <ImageView
+        android:id="@+id/option_picture"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/profile_option"
+        app:layout_constraintEnd_toEndOf="@+id/feed"
+        app:layout_constraintTop_toTopOf="@+id/PP_picture" />
+
+    <ImageView
+
+        android:id="@+id/feed"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/feed"
+        app:layout_constraintEnd_toStartOf="@+id/gd_v_3"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/gd_v_1"
+        app:layout_constraintTop_toBottomOf="@+id/PP_picture" />
+
+    <ImageView
+
+        android:id="@+id/feedlove"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/love"
+        app:layout_constraintStart_toStartOf="@+id/feed"
+        app:layout_constraintTop_toBottomOf="@+id/feed" />
+
+    <ImageView
+
+        android:id="@+id/feed_coment"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/feed_coment"
+        app:layout_constraintStart_toEndOf="@+id/feedlove"
+        app:layout_constraintTop_toBottomOf="@+id/feed" />
+
+    <ImageView
+
+        android:id="@+id/feed_share"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/feed_share"
+        app:layout_constraintStart_toEndOf="@+id/feed_coment"
+        app:layout_constraintTop_toBottomOf="@+id/feed" />
+
+
+    <ImageView
+        android:id="@+id/savefeed"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/feed_save"
+        app:layout_constraintEnd_toEndOf="@+id/feed"
+        app:layout_constraintTop_toBottomOf="@+id/feed" />
+
+    <TextView
+        android:id="@+id/Likes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="3.455 Likes"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintStart_toStartOf="@+id/feedlove"
+        app:layout_constraintTop_toBottomOf="@+id/feedlove" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintStart_toStartOf="@+id/Likes_text"
+        app:layout_constraintTop_toBottomOf="@+id/Likes_text" />
+
+    <ImageView
+        android:id="@+id/White_BG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/home_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/line_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/line_home"
+        app:layout_constraintBottom_toTopOf="@+id/White_BG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/Home_home"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_27sdp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toStartOf="@+id/search_home"
+        app:layout_constraintTop_toTopOf="@+id/Add_home" />
+
+    <ImageView
+        android:id="@+id/search_home"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_27sdp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/home_searcj"
+        app:layout_constraintEnd_toStartOf="@+id/Add_home"
+        app:layout_constraintTop_toTopOf="@+id/Add_home" />
+
+    <ImageView
+        android:id="@+id/Add_home"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/home_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/heart_home"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_27sdp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/home_heart"
+        app:layout_constraintStart_toEndOf="@+id/Add_home"
+        app:layout_constraintTop_toTopOf="@+id/Add_home" />
+
+    <ImageView
+        android:id="@+id/profil_home"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_27sdp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/proffile_home"
+        app:layout_constraintStart_toEndOf="@+id/heart_home"
+        app:layout_constraintTop_toTopOf="@+id/Add_home" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_h_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_h_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_h_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_v_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_v_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_v_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
